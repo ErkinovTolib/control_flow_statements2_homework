@@ -30,5 +30,7 @@ def main(n):
         answer = c
     if d>a and d>b and d>c and d>e:
         answer = d
+    if e>a and e>b and e>c and e>d:
+        answer+=e
     return answer
 print(main(25689))
