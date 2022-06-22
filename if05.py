@@ -1,4 +1,5 @@
 def main(n):
+    answer = 0
     """
     Find the largest digit of the five-digit number.
     Args:
