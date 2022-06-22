@@ -9,29 +9,28 @@ def main(n):
     Returns:
         int: return answer.
     """
+    s = 0
     a = n%10
     n//=10   
-
+    if s<a:
+        s = 1
     b = n%10
     n//=10
-
+    if s<b:
+        s = 2
     c = n%10
     n//=10
-
+    if s<c:
+        s = 3
     d = n%10
     n//=10
-
+    if s<d:
+        s = 4
     e = n%10
     n//=10
-    if a>b and a>c and a>d and a>e:
-        answer = a
-    if b>a and b>c and b>d and b>e:
-        answer = b
-    if c>a and c>b and c>d and c>e:
-        answer = c
-    if d>a and d>b and d>c and d>e:
-        answer = d
-    if e>a and e>b and e>c and e>d:
-        answer+=e
-    return 5
-print(main(25689))
+    if s<e:
+        s = 5
+    return s
+print(main(25698))
+
+    
