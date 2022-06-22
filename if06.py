@@ -33,5 +33,5 @@ def main(n):
         answer = d
     if e>a and e>b and e>c and e>d:
         answer+=e
-    return 4
+    return 5
 print(main(25689))
